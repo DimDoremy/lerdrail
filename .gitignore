@@ -1,0 +1,11 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# agent local state (keep the skills, ignore per-machine cruft)
+.zcode/cache/
