@@ -1,6 +1,6 @@
 ---
 name: dev-workflow
-description: Use at the START of any feature or bugfix in this Laravel/Inertia/React/Lerd project, before writing code and before committing. Orchestrates the superpowers workflow chain (brainstorming to writing-plans to subagent-driven-development to finishing-a-development-branch) with verification-before-completion gates. Injects three project-specific layers: test gates (php/http/console via lerd test, browser via Pest 4 native browser testing not Dusk), per-module acceptance before the next plan, and branch discipline (per-plan feature branches off dev, never touch main). Maps Boost (app root-cause) and Lerd (dump/profiler/worker-heal) onto systematic-debugging.
+description: Use when starting any feature or bugfix in this Laravel/Inertia/React/Lerd project, before writing code or committing. Orchestrates the superpowers workflow chain and injects project test gates, per-module acceptance, and branch discipline.
 ---
 
 # Development Workflow

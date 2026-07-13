@@ -3,6 +3,11 @@
 > **Rails to keep vibe-coding Laravel on track.**
 > A 5-skill harness pack for building Laravel apps on [Lerd](https://lerd.sh) — Laravel + Inertia/React/Tailwind on PostgreSQL (with a path to ClickHouse), driven by Boost + Lerd MCP, context7, and the superpowers workflow skills.
 
+> **Quick install (global, all projects):** `npx skills add DimDoremy/lerdrail --global`
+> See [`INSTALL.md`](INSTALL.md) for all install options (global / project-local / single skill).
+
+
+
 `lerdrail` is a project-local **skills pack** (not a library, not a package you `composer require`). You drop it into a Laravel project's `.zcode/skills/`, commit it to git, and your AI coding agent (ZCode / Claude Code / any agent that loads Agent Skills) gains a coherent set of conventions, decisions, and workflow discipline tuned to this exact stack — instead of rediscovering the right way to do things on every turn.
 
 ## Why
@@ -61,7 +66,26 @@ Browser testing uses **Pest 4 native browser testing** (Playwright-based), per L
 
 ## Install
 
-`lerdrail` is meant to live **inside** a project and travel with its git history — clone-and-go for teammates, same philosophy as `lerd mcp:inject`.
+There are two ways to install; **`npx skills` is the recommended path** (works across ZCode, Claude Code, Codex, Cursor, and 70+ other agents). Full options in [`INSTALL.md`](INSTALL.md).
+
+### Option A — `npx skills` (recommended)
+
+```bash
+# global: install once, available in every project
+npx skills add DimDoremy/lerdrail --global
+
+# or project-local: install only into the current project
+npx skills add DimDoremy/lerdrail
+
+# or a single skill:
+npx skills add DimDoremy/lerdrail --skill postgres-valkey --global
+```
+
+`npx skills` auto-detects your agent and installs the skill directories into the right place (e.g. `~/.zcode/skills/` for global, `.zcode/skills/` for project-local). Updates with `npx skills update`.
+
+### Option B — git clone (vendoring into the repo)
+
+`lerdrail` can also live **inside** a project and travel with its git history — clone-and-go for teammates, same philosophy as `lerd mcp:inject`.
 
 ```bash
 # from your Laravel project root
