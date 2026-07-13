@@ -168,6 +168,6 @@ Before writing a migration, answer:
 5. **Time?** Tier 2 tables must have `created_at` indexed (and consider it for the future ORDER BY).
 6. **Lifecycle?** Tier 1 → `timestamps()` + `softDeletes()` + up/down migrations. Tier 2 → `timestamps()` (use `created_at`), **no** softDeletes, immutable rows.
 7. **FKs?** Tier 1 uses `foreignUuid(...)->constrained()`. Tier 2 may denormalize a snapshot of the referenced entity (append-only can't rely on FK for event history).
-8. **Reversible?** Every `up()` needs a `down()` that truly reverses (see dev-workflow quality gates).
+8. **Reversible?** Every `up()` needs a `down()` that truly reverses (see lerdrail-workflow quality gates).
 
 Answering these up front is the whole point of this skill — it prevents the shape decisions that lock you in.

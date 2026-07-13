@@ -34,7 +34,7 @@ bug / unexpected behavior
 5. logs         → MCP logs tool, grep across app/fpm/worker/nginx
 ```
 
-Always clean up instruments (`lerd dump off`, `lerd profile off`) before committing — see dev-workflow quality gates.
+Always clean up instruments (`lerd dump off`, `lerd profile off`) before committing — see lerdrail-workflow quality gates.
 
 ## 1. dump / dd
 
@@ -107,4 +107,4 @@ Limits: 30s hard timeout per run, 64KB request body, fresh process per run (no c
 ## Pairing with Boost and superpowers
 
 - **Boost** gives app-level root cause that instruments can't: Error Tracking (exceptions with stack), Database Queries (what actually ran), Configuration Access (is the config what you think?). When a runtime symptom is unclear, cross-check with Boost introspection.
-- **superpowers:systematic-debugging** is the discipline: don't patch symptoms, find the root cause. Drop → query → profiler → worker-heal → logs is the *instrumentation*; systematic-debugging is the *method* that decides which instrument and interprets results. See `dev-workflow`.
+- **superpowers:systematic-debugging** is the discipline: don't patch symptoms, find the root cause. Drop → query → profiler → worker-heal → logs is the *instrumentation*; systematic-debugging is the *method* that decides which instrument and interprets results. See `lerdrail-workflow`.

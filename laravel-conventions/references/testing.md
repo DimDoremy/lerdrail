@@ -9,7 +9,7 @@
 - [Test data: factories, seeders, RefreshDatabase](#test-data-factories-seeders-refreshdatabase)
 - [Mocking](#mocking)
 
-Browser testing (the 4th gate) is covered in `dev-workflow`'s testing-gates (Pest 4 native browser testing, not Dusk). Query Pest docs via context7 `/pestphp/docs`.
+Browser testing (the 4th gate) is covered in `lerdrail-workflow`'s testing-gates (Pest 4 native browser testing, not Dusk). Query Pest docs via context7 `/pestphp/docs`.
 
 ## Pest, run via Lerd
 
@@ -24,7 +24,7 @@ lerd pest --coverage
 lerd test --parallel               # parallel execution
 ```
 
-There is no `lerd exec` — `lerd test` / `lerd artisan test` / `lerd pest` are the commands. The test *gates* (what must pass, when) are defined in `dev-workflow`'s [testing-gates.md](../../dev-workflow/references/testing-gates.md); this reference is about how to write them.
+There is no `lerd exec` — `lerd test` / `lerd artisan test` / `lerd pest` are the commands. The test *gates* (what must pass, when) are defined in `lerdrail-workflow`'s [testing-gates.md](../../lerdrail-workflow/references/testing-gates.md); this reference is about how to write them.
 
 A Pest test:
 ```php

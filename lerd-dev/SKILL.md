@@ -106,4 +106,4 @@ Pre-resolved library IDs so you don't re-resolve each session — full query tem
 | Using `lerd exec artisan ...` | No such CLI command — use `lerd artisan ...` |
 | Running `php artisan test` from host shell | May hit wrong PHP/version — use `lerd test` |
 | Forgetting `lerd dump off` | Leftover `dump()` stays captured; clean before commit |
-| Editing DuskTestCase / Selenium manually | Let `lerd env` wire Dusk; for new projects prefer Pest browser testing (see dev-workflow) |
+| Editing DuskTestCase / Selenium manually | Let `lerd env` wire Dusk; for new projects prefer Pest browser testing (see lerdrail-workflow) |

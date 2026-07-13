@@ -37,7 +37,7 @@ Useful queries:
 ## Pest
 
 - **`/pestphp/docs`** — Pest framework docs.
-- **`/pestphp/pest-plugin-browser`** — browser testing plugin (Playwright-based; the project's chosen browser-testing path, see `dev-workflow`).
+- **`/pestphp/pest-plugin-browser`** — browser testing plugin (Playwright-based; the project's chosen browser-testing path, see `lerdrail-workflow`).
 - Queries: "dataset provider", "beforeEach afterEach", "expect API", "architecture testing", "browser testing setup chromium".
 
 ## PostgreSQL

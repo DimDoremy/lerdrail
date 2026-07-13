@@ -74,4 +74,4 @@ If you've hand-edited `.env` and broken it, the fastest fix is `lerd env` to rew
 
 `lerd db:create <name>` (and `lerd setup`) always creates **two** databases: `<name>` and `<name>_testing`, with identical credentials. The standard Laravel `phpunit.xml` overrides `DB_DATABASE=testing` for the test environment, so tests hit `<name>_testing` automatically. You do not need to edit `phpunit.xml`.
 
-See `dev-workflow`'s testing gates for how tests run under Lerd.
+See `lerdrail-workflow`'s testing gates for how tests run under Lerd.

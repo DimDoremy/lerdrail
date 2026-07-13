@@ -1,5 +1,5 @@
 ---
-name: dev-workflow
+name: lerdrail-workflow
 description: Use when starting any feature or bugfix in this Laravel/Inertia/React/Lerd project, before writing code or committing. Orchestrates the superpowers workflow chain and injects project test gates, per-module acceptance, and branch discipline.
 ---
 

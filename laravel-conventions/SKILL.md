@@ -63,7 +63,7 @@ Details in [references/models-and-casts.md](references/models-and-casts.md).
 
 ## Testing (php / http / console)
 
-Three of the four test gates live here; browser testing is in `dev-workflow`.
+Three of the four test gates live here; browser testing is in `lerdrail-workflow`.
 
 - **Pest** is the project's test framework (`lerd artisan test` / `lerd pest`).
 - **HTTP tests** (`$this->get/post`, `assertStatus`, `assertJson`, `assertSessionHas`) for endpoints.
@@ -71,7 +71,7 @@ Three of the four test gates live here; browser testing is in `dev-workflow`.
 - Data: `RefreshDatabase` trait (migrates the `_testing` DB), factories for entities, `DatabaseSeeder` for shared fixtures, Mockery for collaborators.
 - Run: `lerd test --filter=OrderTest` or `lerd pest`.
 
-Full conventions and patterns in [references/testing.md](references/testing.md). The test *gates* (what must pass, when) are defined in `dev-workflow`'s [testing-gates.md](../dev-workflow/references/testing-gates.md).
+Full conventions and patterns in [references/testing.md](references/testing.md). The test *gates* (what must pass, when) are defined in `lerdrail-workflow`'s [testing-gates.md](../lerdrail-workflow/references/testing-gates.md).
 
 ## Quick reference
 

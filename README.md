@@ -34,7 +34,7 @@ Five focused skills, each with a precise trigger and progressive-disclosure refe
 | **`laravel-conventions`** | Artisan codegen, Eloquent `HasUuids` + JsonB casts, form requests / API resources, Inertia render/props flow, Pest tests (php/http/console) |
 | **`postgres-valkey`** | The data-architecture first principle (see below), PG features (JSONB / arrays / enums / GIN / FTS / CTEs), migration templates, ClickHouse migration path, Redis/Valkey + Horizon |
 | **`react-tailwind`** | Inertia page/layout/component structure, Tailwind token discipline, Vite build & SSR via FrankenPHP, TypeScript types mirroring JsonB-backed resources |
-| **`dev-workflow`** | Orchestrates the superpowers chain with three project layers: four test gates, per-module acceptance, and `feature/<plan>` off `dev` branch discipline (never `main`) |
+| **`lerdrail-workflow`** | Orchestrates the superpowers chain with three project layers: four test gates, per-module acceptance, and `feature/<plan>` off `dev` branch discipline (never `main`) |
 
 ### The data-architecture first principle
 
@@ -114,7 +114,7 @@ lerdrail/
 ├── postgres-valkey/
 │   ├── SKILL.md
 │   └── references/           # data-architecture (core), postgres-features, migration-templates, clickhouse-migration, cache-queue
-└── dev-workflow/
+└── lerdrail-workflow/
     ├── SKILL.md
     └── references/           # testing-gates, module-acceptance, quality-gates
 ```

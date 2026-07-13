@@ -174,4 +174,4 @@ For JsonB, prefer realistic nested structures in the factory so tests exercise t
 
 ## Reversibility
 
-Every `up()` needs a `down()`. For DDL added via `DB::statement` (indexes, types, generated columns), the `down()` must drop them — and in the right order (drop indexes before columns/types they depend on). dev-workflow's quality gate checks `lerd artisan migrate:status` and that `migrate:rollback` works; verify locally with a snapshot: `lerd db:snapshot pre-migration` before, `lerd db:restore pre-migration` to test rollback.
+Every `up()` needs a `down()`. For DDL added via `DB::statement` (indexes, types, generated columns), the `down()` must drop them — and in the right order (drop indexes before columns/types they depend on). lerdrail-workflow's quality gate checks `lerd artisan migrate:status` and that `migrate:rollback` works; verify locally with a snapshot: `lerd db:snapshot pre-migration` before, `lerd db:restore pre-migration` to test rollback.

@@ -37,7 +37,7 @@ Memorize the one-line summaries, then use the decision table.
 | How should this model/migration be structured? | **harness** | `laravel-conventions` + `postgres-valkey` skills |
 | Is this a normalized entity or an append-only event stream? | **harness** | `postgres-valkey` data-architecture principle |
 | How should this Inertia page component be organized? | **harness** | `react-tailwind` skill |
-| How do we go from a user request to a committed feature? | **harness** | `dev-workflow` skill |
+| How do we go from a user request to a committed feature? | **harness** | `lerdrail-workflow` skill |
 | TDD red-green cycle, subagent execution, branch finishing | **superpowers** | `superpowers:test-driven-development`, `:subagent-driven-development`, etc. |
 
 ## Layer details
@@ -52,10 +52,10 @@ Lerd's MCP server (11 grouped tools) and the `lerd` CLI own everything **infrast
 `mcp__context7__query-docs` fetches authoritative, version-current docs for libraries Boost doesn't cover: **React, Tailwind, Inertia.js, PostgreSQL, Valkey, ClickHouse, Pest**. Use it instead of pretraining knowledge for API specifics. Laravel docs are the one exception — Boost's Documentation Search is better there; use context7 only as a fallback.
 
 ### This harness — "how should the code be written"
-Four sibling skills encoding project conventions and decisions: `laravel-conventions` (models, casts, codegen, testing), `postgres-valkey` (the data-architecture first principle, PG features, Redis/Valkey), `react-tailwind` (Inertia page structure, Tailwind token usage, Vite/SSR), `dev-workflow` (the PRD→plan→execute→accept cycle, test gates, branch discipline). These layers carry **judgment**, which neither Boost nor Lerd nor context7 provide.
+Four sibling skills encoding project conventions and decisions: `laravel-conventions` (models, casts, codegen, testing), `postgres-valkey` (the data-architecture first principle, PG features, Redis/Valkey), `react-tailwind` (Inertia page structure, Tailwind token usage, Vite/SSR), `lerdrail-workflow` (the PRD→plan→execute→accept cycle, test gates, branch discipline). These layers carry **judgment**, which neither Boost nor Lerd nor context7 provide.
 
 ### superpowers — "how should work get executed"
-The generic execution engine: `brainstorming` (produce a spec/PRD), `writing-plans` (decompose into a TDD plan), `subagent-driven-development` (execute per-task with review), `test-driven-development`, `systematic-debugging`, `verification-before-completion`, `finishing-a-development-branch`, `using-git-worktrees`. `dev-workflow` orchestrates these; you rarely invoke them raw — go through `dev-workflow`.
+The generic execution engine: `brainstorming` (produce a spec/PRD), `writing-plans` (decompose into a TDD plan), `subagent-driven-development` (execute per-task with review), `test-driven-development`, `systematic-debugging`, `verification-before-completion`, `finishing-a-development-branch`, `using-git-worktrees`. `lerdrail-workflow` orchestrates these; you rarely invoke them raw — go through `lerdrail-workflow`.
 
 ## Call preference rules
 
@@ -64,7 +64,7 @@ The generic execution engine: `brainstorming` (produce a spec/PRD), `writing-pla
 3. **Laravel docs → Boost Documentation Search first**, context7 `/laravel/docs` fallback.
 4. **Non-Laravel docs → context7** (React/Tailwind/Inertia/PG/Valkey/ClickHouse/Pest).
 5. **Conventions/decisions/workflow → the harness skills.**
-6. **Execution mechanics → superpowers** (via `dev-workflow`).
+6. **Execution mechanics → superpowers** (via `lerdrail-workflow`).
 
 ## Conflict resolution
 
@@ -72,4 +72,4 @@ If two layers seem to apply:
 - **Boost vs reading files** for app state → Boost wins (it sees the live app).
 - **Boost vs Lerd** for running artisan → either works; prefer Boost if you also need introspection in the same turn, Lerd if it's pure execution.
 - **context7 vs pretraining** for any library API → context7 wins (current docs beat stale pretraining).
-- **harness vs superpowers** for "how to proceed" → `dev-workflow` decides and delegates to superpowers.
+- **harness vs superpowers** for "how to proceed" → `lerdrail-workflow` decides and delegates to superpowers.

@@ -29,7 +29,7 @@ Installs into the project's skills directory (e.g. `.zcode/skills/`) and writes 
 npx skills add DimDoremy/lerdrail --skill postgres-valkey --global
 ```
 
-Skills available: `lerd-dev`, `laravel-conventions`, `postgres-valkey`, `react-tailwind`, `dev-workflow`. List them without installing:
+Skills available: `lerd-dev`, `laravel-conventions`, `postgres-valkey`, `react-tailwind`, `lerdrail-workflow`. List them without installing:
 
 ```bash
 npx skills add DimDoremy/lerdrail --list
